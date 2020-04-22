@@ -1,0 +1,24 @@
+[package]
+name = "react-native-cardano-wallet"
+version = "0.0.1"
+authors = [""]
+edition = "2020"
+
+[build-dependencies]
+cbindgen = "0.9"
+
+[dependencies]
+cardano-wallet = { git = "https://github.com/input-output-hk/js-cardano-wasm.git" }
+wasm-bindgen = { version = "0.2" }
+
+[target.'cfg(target_os="android")'.dependencies]
+jni = "0.13.1"
+
+[lib]
+name = "react_native_cardano_wallet"
+crate-type = ["staticlib", "cdylib"]
+
+[profile.release]
+debug = false
+opt-level = 's'
+lto = false
