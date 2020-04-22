@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.platforms    = { :ios => "9.0", :tvos => "10.0" }
   s.source       = { :git => "https://github.com/github_account/react-native-cardano-wallet-poc.git", :tag => "#{s.version}" }
 
-  s.module_name = 'CardanoWallet'
+  s.module_name = 'CardanoWalletPoc'
 
   s.source_files = "ios/**/*.{h,m,swift,sh}"
   s.requires_arc = true

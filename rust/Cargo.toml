@@ -2,7 +2,7 @@
 name = "react-native-cardano-wallet"
 version = "0.0.1"
 authors = [""]
-edition = "2020"
+edition = "2018"
 
 [build-dependencies]
 cbindgen = "0.9"

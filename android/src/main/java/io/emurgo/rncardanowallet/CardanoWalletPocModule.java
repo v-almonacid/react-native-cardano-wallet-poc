@@ -33,4 +33,11 @@ public class CardanoWalletPocModule extends ReactContextBaseJavaModule {
                 .pour(promise);
     }
 
+    @ReactMethod
+    public final void addressToString(String address, Promise promise) {
+        Native.I
+                .addressToString(new RPtr(address))
+                .pour(promise);
+    }
+
 }

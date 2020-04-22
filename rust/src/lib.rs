@@ -1,14 +1,11 @@
 extern crate cardano_wallet;
 extern crate wasm_bindgen;
 
-// mod address;
-// mod certificate;
 mod js_result;
 mod panic;
 mod ptr;
 mod ptr_impl;
 
-pub use address::*;
 pub use ptr::*;
 
 #[cfg(target_os = "android")]

@@ -42,13 +42,19 @@ class Ptr {
 export class Address extends Ptr {
 
     /**
-    * ```
     * @param {string} s
     * @returns {Promise<Address>}
     */
     static async from_string(s) {
         const ret = await CardanoWalletPoc.addressFromString(s);
         return Ptr._wrap(ret, Address);
+    }
+
+    /**
+    * @returns {Promise<string>}
+    */
+    async to_string() {
+        return await CardanoWalletPoc.addressToString(this.ptr);
     }
 
 }

@@ -17,6 +17,7 @@ final class Native {
 
     // Address
     public final native Result<RPtr> addressFromString(String str);
+    public final native Result<String> addressToString(RPtr address);
 
     public final native void ptrFree(RPtr ptr);
 }

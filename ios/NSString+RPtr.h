@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <react_native_chain_libs.h>
+#import <react_native_cardano_wallet.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
